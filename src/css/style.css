@@ -1,0 +1,44 @@
+body {
+  background: linear-gradient(#bbbbbb, transparent 1px), linear-gradient(90deg, #bbbbbb, transparent 1px);
+  background-size: 15px 15px;
+  background-position: center center;
+}
+.incoming {
+  width: 750px;
+  padding: 16px;
+}
+.incoming-header {
+  margin-top: 0;
+}
+.incoming-massages {
+  background-color: #ffffff;
+}
+.message {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+.message:nth-child(1) {
+  border-top: 1px solid;
+}
+.message div {
+  display: flex;
+  justify-content: space-around;
+}
+.message div:nth-last-of-type(1) {
+  display: flex;
+  justify-content: flex-end;
+}
+.message div:nth-of-type(1) {
+  display: flex;
+  justify-content: flex-start;
+}
+.name-wrapper,
+.subject-wrapper,
+.date-wrapper {
+  width: 30%;
+}
